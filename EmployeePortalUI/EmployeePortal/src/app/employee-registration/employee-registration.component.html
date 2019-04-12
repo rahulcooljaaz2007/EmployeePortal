@@ -1,0 +1,40 @@
+<div >
+  <legend>
+   <div > 
+    <div ng-class="row">
+        <div ng-class="col-sm-4">
+          FirstName:  
+        </div>
+        <div ng-class="col-sm-8">
+          <input type="text" [(ngModel)]="firstName"/>
+         </div> 
+    </div>
+    <div ng-class="row">
+        <div ng-class="col-sm-4">LastName: </div> 
+        <div ng-class="col-sm-8"> <input type="text" [(ngModel)]="lastName"/></div> 
+    </div>
+    <div ng-class="row">
+        <div ng-class="col-sm-4">Department:</div> 
+        <div ng-class="col-sm-8"><input type="text" [(ngModel)]="department"/></div>
+    </div>
+    <div ng-class="row">
+        <div ng-class="col-sm-4">Gender:  </div> 
+        <div ng-class="col-sm-8">  <input type="text" [(ngModel)]="gender"/></div>
+    </div>
+    <div ng-class="row">
+        <div ng-class="col-sm-4">Date of Birth:</div> 
+        <div ng-class="col-sm-8">   <input type="text" [(ngModel)]="dateOfBirth"/></div>
+    </div>
+    <br/>
+    <div ng-class="row">
+      <button name="Submit" (click)="registerEmployee()">Register</button>
+    </div> 
+  </div> 
+  </legend>
+<legend>
+    {{registerEmp.message}}
+  {{" "+registerEmp.firstName}}
+  {{" "+registerEmp.lastName}}
+</legend>
+
+</div>

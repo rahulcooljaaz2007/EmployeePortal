@@ -1,0 +1,5 @@
+package com.employee.portal.employee.service;
+
+public interface EmployeeService {
+
+}
